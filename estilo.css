@@ -106,16 +106,15 @@ nav span:hover .submenu{
 
 }
 
-
-section h2 {
+section h2{
     background-color: #f90;
-    text-align: center;
     font-size: 40px;
-    color: black;
+    color: black; 
+    text-align: center; 
 }
 
 section article {
-    background-color: #dddd;
+    background-color: #303030;
     display: flex;
     flex-direction: column;
     margin: 10px 0;
@@ -135,7 +134,7 @@ section h4 {
     font-size: 1.5rem;
     text-align: center;
     padding: 5px;
-    color: black;
+    color: white;
 }
 section h4:hover {
     color: #f90;
@@ -146,6 +145,7 @@ section p {
     font-size: 1rem;
     margin: 5px;
     max-width: max-content;
+    color: white;
 }
 
 .index-productos {
@@ -206,6 +206,11 @@ aside {
 .index-pagos img {
     max-width: 60px;
     margin-top: 15px;
+    transform: max width 2s;
+}
+.index-pagos img:hover{
+    max-width: 80px;
+    transition: all 0.5s;
 }
 
 .formulario {
