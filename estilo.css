@@ -75,7 +75,37 @@ nav span a {
 
 nav span a:hover {
     color: #f90;
+    transition: all 0.5s;
 }
+.submenu{
+    display: none;
+    position: absolute;
+    width: 40vh;
+    background-color: #102327;
+    border-left: 15px solid #303030;
+    transition: opacity 2s;
+
+    
+}
+.submenu span {
+    margin: 30px 0 10px 40px;
+    
+
+}
+.submenu span a{
+    padding: 0 0 20px 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    color: white;
+
+}
+nav span:hover .submenu{
+    display: block;
+    opacity: 1;
+
+}
+
 
 section h2 {
     background-color: #f90;
@@ -109,6 +139,7 @@ section h4 {
 }
 section h4:hover {
     color: #f90;
+    transition: all 0.5s;
 }
 
 section p {
@@ -267,6 +298,7 @@ footer {
 
 .redes a:hover {
     color: #f90;
+    transition: all 0.5s;
 }
 
 .footer-second {
