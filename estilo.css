@@ -98,10 +98,17 @@ section img {
     margin-top: 20px;
 }
 
+section a{
+    text-decoration: none;
+}
 section h4 {
     font-size: 1.5rem;
     text-align: center;
     padding: 5px;
+    color: black;
+}
+section h4:hover {
+    color: #f90;
 }
 
 section p {
@@ -288,13 +295,159 @@ footer {
     max-width: 200px;
     height: 200px;
 }
+.galerias div a{
+    text-decoration: none;
+}
+
 .galerias div h3{
+    text-decoration: none;
     font-size: 1.5rem;
     margin-top: 15px;
+    color: black;
 }
+.galerias div h3:hover {
+    color: #f90;
+}
+
 .galerias div p{
    text-align: center;
 }
+
+
+.eventos{
+    display: grid;
+    grid-template-areas: 
+    "uno dos";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.eventos iframe{
+   height: 350px;
+    width: 90%;
+    margin: 5%;
+    border: 5px solid #dddd;
+    border-radius: 4px;
+}
+
+.text-video{
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    margin: 0 5%;
+    border-radius: 4px;
+}
+.eventos h3{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+.eventos p{
+    color: white;
+    padding: 0 5%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.eventos input{
+    width: 70%;
+    margin: auto;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    margin-bottom:10px;
+    background: linear-gradient(#f90, #ffc56e);
+}
+.video-uno{
+    grid-area: uno;
+    background-color: #1b393f;
+
+
+}
+.video-dos{
+    grid-area: dos;
+    background-color: #1b393f;
+
+}
+
+
+
+
+
+
+#grid-pagos{
+display: grid;
+grid-template-areas:
+    "cabeza"
+    "menu"
+    "pago"
+    "pie";
+grid-template-columns: 100%;
+grid-template-rows: 4fr 1fr 20fr 4fr;
+column-gap: 20px;
+row-gap: 20px;
+}
+
+.form-pagos{
+    background-color: #303030;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 35%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.form-pagos h4{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.form-pagos p{
+    color: white;
+}
+
+
+.form-pagos span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-pagos img{
+    max-width: 50px;
+    margin:0 10px;
+}
+
+.botons{
+    color: white;
+    margin-left: 15%;
+    height: 40px;
+    width: 70%;
+    background: #303030;
+    border: 1px solid #f90;
+    border-radius: 4px;
+}
+.continue{
+    margin-left: 10%;
+    height: 40px;
+    width: 80%;
+    background: linear-gradient(#f90, #ffc56e);
+    border: 2px solid #dddd;
+    border-radius: 4px;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width:480px) {
     #grid {
         display: grid;
@@ -338,4 +491,36 @@ footer {
         width: 70%;
 
     }
+
+    .form-pagos{
+        height: 100%;
+        width: 80%;
+    }
+    .form-pagos h4{
+        margin-top: 10px;
+    }
+    .form-pagos p{
+        margin-top: 10px;
+    }
+    .botons{
+        margin-top: 10px;
+    }
+    .continue{
+        margin: 10px 0 10px 10%;   
+    }
+
+
+    
+    .eventos{
+        display: grid;
+        grid-template-areas: 
+        "uno"
+        "dos";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .eventos iframe{
+        height: 250px;
+    }
+
 }
