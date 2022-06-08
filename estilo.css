@@ -58,6 +58,30 @@ header h1 {
     margin: 50px;
 }
 
+.mover-titulo{
+    animation-duration: 3s;
+    animation-name: mover;
+    animation-iteration-count: 1;
+}
+@keyframes mover {
+    0%{
+        transform: translateX(0px)
+        
+    }
+
+    50%{
+        transform: translateX(100px)
+    }
+ 
+    100%{
+        transform: translateX(0px)
+    }
+    
+    
+}
+
+
+
 nav {
     grid-area: menu;
     background-color: #102327;
@@ -107,7 +131,8 @@ nav span:hover .submenu{
 }
 
 section h2{
-    background-color: #f90;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
     font-size: 40px;
     color: black; 
     text-align: center; 
@@ -120,6 +145,9 @@ section article {
     margin: 10px 0;
     height: 300px;
     align-items: center;
+}
+section article:hover{
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 }
 
 section img {
@@ -137,7 +165,7 @@ section h4 {
     color: white;
 }
 section h4:hover {
-    color: #f90;
+    color: #303030;
     transition: all 0.5s;
 }
 
@@ -206,7 +234,8 @@ aside {
 .index-pagos img {
     max-width: 60px;
     margin-top: 15px;
-    transform: max width 2s;
+    transform: max width 1s;
+
 }
 .index-pagos img:hover{
     max-width: 80px;
@@ -254,6 +283,11 @@ aside {
     border: 2px solid #dddd;
     border-radius: 4px;
     font-size: 1.5rem;
+}
+.controls-c:hover{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
 }
 
 footer {
@@ -475,6 +509,7 @@ row-gap: 20px;
     font-size: 1.5rem;
 
 }
+
 
 
 
