@@ -11,13 +11,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 	<link rel="icon" href="imagenes/pata.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<title>Cat & Dog</title>
 </head>
 
 <body id="grid">
 	<header>
-		<a href="index.html"><img  class="mover-titulo" src="imagenes/pata.png" alt=""></a>
-		<h1 class="mover-titulo">Cat & Dog</h1>
+		<a href="index.html"><img class="wow animate__animated animate__flip animate__delay-1s" src="imagenes/pata.png" alt=""></a>
+		<h1 class="wow animate__animated animate__backInRight">Cat & Dog</h1>
 	</header>
 	<nav>
 		<span>
@@ -26,25 +27,25 @@
 		<span>
 			<a href="pag/productos.html">Productos</a>
 			<div class="submenu">
-				<span><a href="">Alimento</a></span>
-				<span><a href="">Juguetes</a></span>
-				<span><a href="">Vestimenta</a></span>
+				<span><a href="pag/productos.html">Alimento</a></span>
+				<span><a href="pag/productos.html">Juguetes</a></span>
+				<span><a href="pag/productos.html">Vestimenta</a></span>
 			</div>
 		</span>
 		<span>
 			<a href="pag/servicios.html">Servicios</a>
 			<div class="submenu">
-				<span><a href="">Limpieza</a></span>
-				<span><a href="">Baño</a></span>
-				<span><a href="">Paseos</a></span>
-				<span><a href="">Entrenamiento</a></span>
+				<span><a href="pag/servicios.html">Limpieza</a></span>
+				<span><a href="pag/servicios.html">Baño</a></span>
+				<span><a href="pag/servicios.html">Paseos</a></span>
+				<span><a href="pag/servicios.html">Entrenamiento</a></span>
 			</div>
 		</span>
 		<span>
 			<a href="pag/eventos.html">Eventos</a>
 			<div class="submenu">
-				<span><a href="">Próximos eventos</a></span>
-				<span><a href="">¿Dónde se realizan?</a></span>
+				<span><a href="pag/eventos.html">Próximos eventos</a></span>
+				<span><a href="pag/eventos.html">¿Dónde se realizan?</a></span>
 			</div>
 		</span>
 		<span>
@@ -108,26 +109,26 @@
 	<aside>
 		<div class="index-pagos">
 			<h4>Métodos de pago</h4>
-			<a href="pag/pago.html"><img src="imagenes/bank.png" alt=""></a>
-			<a href="pag/pago.html"><img src="imagenes/credit-card.png" alt=""></a>
-			<a href="pag/pago.html"><img src="imagenes/pago-en-efectivo.png" alt=""></a>
-			<a href="pag/pago.html"><img src="imagenes/cupon.png" alt=""></a>
+			<a href="pag/pago.html"><img class="wow animate__animated animate__shakeX animate__delay-2s" src="imagenes/bank.png" alt=""></a>
+			<a href="pag/pago.html"><img  class="wow animate__animated animate__shakeX animate__delay-3s" src="imagenes/credit-card.png" alt=""></a>
+			<a href="pag/pago.html"><img  class="wow animate__animated animate__shakeX animate__delay-4s" src="imagenes/pago-en-efectivo.png" alt=""></a>
+			<a href="pag/pago.html"><img  class="wow animate__animated animate__shakeX animate__delay-5s" src="imagenes/cupon.png" alt=""></a>
 		</div>
 		<div class="formulario">
 			<h4>Resolvemos tus dudas</h4>
 			<form action="">
 				<input class="controls-a" type="email" placeholder="Ingrese su email">
 				<input class="controls-b" type="text" placeholder="¿En que podemos ayudarlo?">
-				<input class="controls-c" type="submit" name="Enviar">
+				<input class="controls-c wow animate__animated animate__heartBeat animate__delay-1s" type="submit" name="Enviar">
 			</form>
 		</div>
 	</aside>
 	<footer class="agrandar">
 		<div class="footer-first">
-			<a href="index.html"><img src="imagenes/pata.png" alt=""></a>
+			<a href="index.html"><img class=" wow animate__animated animate__flip animate__delay-2s" src="imagenes/pata.png" alt=""></a>
 			<h3>Cat & Dog</h3>
 			<p>Seguinos en nuestras redes sociales</p>
-			<ul class="redes">
+			<ul class="redes wow animate__animated animate__backInLeft animate__delay-2s">
 				<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				<li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
@@ -138,5 +139,10 @@
 			<p>Copiright @</p>
 		</div>
 	</footer>
+
+	<script src="js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 </body>
 </html>
