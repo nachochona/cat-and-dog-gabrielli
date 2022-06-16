@@ -10,16 +10,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 	<link rel="icon" href="../imagenes/pata.ico">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<title>Cat & Dog</title>
 </head>
 
 <body id="grid-cuerpo">
-	<header class="border">
-		<a href="../index.html"><img src="../imagenes/pata.png" alt=""></a>
-		<h1>Cat & Dog</h1>
+	<header>
+		<a href="../index.html"><img class="wow animate__animated animate__flip animate__delay-1s" src="../imagenes/pata.png" alt=""></a>
+		<h1 class="wow animate__animated animate__backInRight">Cat & Dog</h1>
 	</header>
-	<nav class="border">
+	<nav>
 		<span>
 			<a href="../index.html">Inicio</a>
 		</span>
@@ -36,7 +37,7 @@
 			<a href="../pag/contacto.html">Contacto</a>
 		</span>
 	</nav>
-	<section class=" mapa border">
+	<section class="mapa">
 		<h2>Visítanos en nuestro local</h2>
 		<div>
 			<iframe
@@ -45,13 +46,13 @@
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</section>
-	<aside class="border">
+	<aside>
 		<div class="index-pagos">
 			<h4>Nuestras redes</h4>
-			<a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook.png" alt=""></a>
-			<a href="https://twitter.com"><img src="../imagenes/twitter.png" alt=""></a>
-			<a href="https://www.youtube.com"><img src="../imagenes/youtube.png" alt=""></a>
-			<a href="https://www.instagram.com"><img src="../imagenes/instagram.png" alt=""></a>
+			<a href="https://www.facebook.com" target="_blank"><img class="wow animate__animated animate__shakeX animate__delay-2s" src="../imagenes/facebook.png" alt=""></a>
+			<a href="https://twitter.com"><img class="wow animate__animated animate__shakeX animate__delay-3s" src="../imagenes/twitter.png" alt=""></a>
+			<a href="https://www.youtube.com"><img class="wow animate__animated animate__shakeX animate__delay-4s" src="../imagenes/youtube.png" alt=""></a>
+			<a href="https://www.instagram.com"><img class="wow animate__animated animate__shakeX animate__delay-5s" src="../imagenes/instagram.png" alt=""></a>
 		</div>
 		<div class="formulario">
 			<h4>Resolvemos tus dudas</h4>
@@ -64,10 +65,10 @@
 	</aside>
 	<footer>
 		<div class="footer-first">
-			<a href="index.html"><img src="../imagenes/pata.png" alt=""></a>
+			<a href="index.html"><img class=" wow animate__animated animate__flip animate__delay-2s" src="../imagenes/pata.png" alt=""></a>
 			<h3>Cat & Dog</h3>
 			<p>Seguinos en nuestras redes sociales</p>
-			<ul class="redes">
+			<ul class="redes wow animate__animated animate__backInLeft animate__delay-2s">
 				<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				<li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
 				<li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
@@ -78,5 +79,9 @@
 			<p>Copiright @</p>
 		</div>
 	</footer>
+	<script src="../js/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 </body>
 </html>
